@@ -1,0 +1,17 @@
+@mixin basic-cont_w-h-bc-b-br ($w , $h , $bc , $b , $br) {
+    width: $w;
+    height: $h;
+    background-color: $bc;
+    border: $b; 
+    border-radius: $br;
+}
+
+@mixin flex-cont_w-h-bc-d-fd-jc-ai ($w , $h , $bc , $d , $fd , $jc , $ai) {
+    width: $w;
+    height: $h;
+    background-color: $bc;
+    display: $d;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+} 

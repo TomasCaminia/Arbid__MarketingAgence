@@ -1,0 +1,23 @@
+// ! ABSTRACT
+@import './modules/abstracts/variables';
+@import './modules/abstracts/mixins';
+
+// ? BASE
+@import './modules/base/fonts';
+@import './modules/base/reset';
+
+// ! COMPONENTES
+// * Header
+@import './modules/components/header/header-movil';
+
+
+// * Nav
+@import './modules/components/nav/nav-movil';
+
+
+// * Main
+@import './modules/components/main/main-movil';
+
+
+// * Footer
+@import './modules/components/footer/footer-movil';
