@@ -1,0 +1,19 @@
+{
+  "name": "arbid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Tomas Camiña",
+    "url": "https://github.com/TomasCaminia?tab=repositories",
+    "linkedin": "https://www.linkedin.com/in/tomas-cami%C3%B1a/"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha1"
+  }
+}
