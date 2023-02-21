@@ -1,0 +1,61 @@
+#main {
+    #hero {
+        #container-piramide {
+            @include flex-cont_w-h-bc-d-fd-jc-ai ( none , 40vh , transparent , flex , row , center , center);
+            
+            #piramide-ilustracion {
+                width: 75vw;
+                height: 75vw;
+            }
+        }
+
+        #container-text {
+            margin-top: 6vh;
+
+            #h2-cta {
+                font-family: 'Roboto', sans-serif;
+                font-size: 28px;
+
+                span {font-style: italic;}
+            }
+        }
+
+        #container-cta {
+            @include flex-cont_w-h-bc-d-fd-jc-ai (100vh , 7vh , transparent , flex , row , center , center);
+
+            #button-cta {
+                width: 160px;
+                height: 45px;
+                border-radius: 10px;
+                
+                font-size: 16px;
+                font-style: italic;
+                font-family: 'Roboto' , sans-serif;
+                letter-spacing: 2px
+            }
+        }
+
+        
+        #container-estructures {
+            #estructura-1_hero {
+                position: absolute;
+
+                width: 151.4px;
+                height: 122.5px;
+
+                transform: translate(-4vw , 7vh);
+            } 
+
+            #estructura-2_hero {
+                position: absolute;
+
+                width: 110px;
+                height: 160px;
+
+                transform: translate(70vw , 2.5vh);
+            }
+        }
+        
+        
+    }
+}
