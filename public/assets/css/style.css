@@ -30,86 +30,574 @@
   border-spacing: 0;
 }
 
-#header {
+body {
+  height: 1000vh;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+body span {
+  color: #fab403;
+}
+body main {
+  margin-top: 10vh;
+  color: #00373d;
+}
+body main p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #00373d;
+}
+body main h1, body main h2, body main h3, body main h4 {
+  color: #00373d;
+}
+body main h1 span, body main h2 span, body main h3 span, body main h4 span {
+  color: #00929b;
+}
+body main .color-light {
+  color: #fab403;
+}
+
+#header-principal {
   width: 100vw;
   height: 8vh;
   background-color: #ffffff;
-  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.918);
+  display: flex;
+  box-shadow: 0 0.1rem 0.6rem -0.3rem rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
-#header #logo {
-  width: 74px;
-  height: 58px;
-  margin: -4px 0 0 -25px;
+#header-principal #logo {
+  width: 4.6rem;
+  height: 3.6rem;
+  margin: -0.3rem 0 0 -1.6rem;
 }
-#header #h2-logo {
-  font-size: 40px;
-  font-family: "MuseoModerno", cursive;
+#header-principal #text-logo {
   color: #004f83;
-  margin-top: 18px;
+  font-family: "MuseoModerno", cursive;
+  font-size: 2.5rem;
+  margin-top: 1rem;
 }
-#header #h2-logo span {
-  color: #fab403;
-}
-#header #menu {
-  width: 45px;
-  height: 45px;
-  margin: 15px -30px 0 0;
+#header-principal #menu {
+  width: 2.8rem;
+  height: 2.8rem;
+  margin: 0.9rem -1.9rem 0 0;
 }
 
-#main #hero #container-piramide {
-  width: none;
-  height: 40vh;
-  background-color: transparent;
+nav {
+  width: 100vw;
+  height: 25vh;
+  background-color: #ffffff;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   display: flex;
+  margin-top: -33vh;
+  position: absolute;
+  box-shadow: 0 8px 6px -6px #999;
+  text-align: center;
+}
+nav ul {
+  transform: translateY(0.5rem);
+}
+nav ul li {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #00373d;
+  margin: 1rem 0;
+}
+nav ul img {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+#main-principal #hero #box-piramide {
+  width: 100vw;
+  height: 43vh;
+  background-color: transparent;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
-#main #hero #container-piramide #piramide-ilustracion {
+#main-principal #hero #box-piramide img {
   width: 75vw;
   height: 75vw;
+  max-width: 700px;
+  max-height: 550px;
 }
-#main #hero #container-text {
-  margin-top: 6vh;
+#main-principal #hero #box-text {
+  text-align: center;
+  margin-top: 4vh;
 }
-#main #hero #container-text #h2-cta {
+#main-principal #hero #box-text h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 28px;
+  font-size: 1.75rem;
 }
-#main #hero #container-text #h2-cta span {
+#main-principal #hero #box-text h2 span {
+  color: #00373d;
   font-style: italic;
 }
-#main #hero #container-cta {
+#main-principal #hero #box-cta {
   width: 100vh;
   height: 7vh;
   background-color: transparent;
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
-#main #hero #container-cta #button-cta {
-  width: 160px;
-  height: 45px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-style: italic;
+#main-principal #hero #box-cta .button {
+  width: 10rem;
+  height: 2.8rem;
+  background-color: #00929b;
+  border: none;
+  border-radius: 0.625rem;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
+  color: #ffffff;
+  letter-spacing: 0.15rem;
 }
-#main #hero #container-estructures #estructura-1_hero {
-  position: absolute;
-  width: 151.4px;
-  height: 122.5px;
-  transform: translate(-4vw, 7vh);
+#main-principal #hero #box-estructures_hero {
+  width: 100vw;
+  height: 30vh;
+  position: relative;
 }
-#main #hero #container-estructures #estructura-2_hero {
+#main-principal #hero #box-estructures_hero #el-1 {
   position: absolute;
-  width: 110px;
-  height: 160px;
-  transform: translate(70vw, 2.5vh);
+  top: none;
+  right: none;
+  bottom: 3vh;
+  left: 0;
+  width: 9.4rem;
+  height: 7.6rem;
+}
+#main-principal #hero #box-estructures_hero #el-2 {
+  position: absolute;
+  top: none;
+  right: 0;
+  bottom: 3.5vh;
+  left: none;
+  width: 8.75rem;
+  height: 12.5rem;
+}
+#main-principal #what-is-arbid {
+  width: 100vw;
+  height: none;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#main-principal #what-is-arbid .box-estructures-flex_wia {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+#main-principal #what-is-arbid .box-estructures-flex_wia #el-3 {
+  width: 11rem;
+  height: 23rem;
+}
+#main-principal #what-is-arbid .box-estructures-flex_wia #el-4 {
+  width: 10rem;
+  height: 5rem;
+}
+#main-principal #what-is-arbid #text_wia {
+  width: 80vw;
+  height: 32.5vh;
+  text-align: justify;
+  transform: translate(1rem, -4rem);
+}
+#main-principal #what-is-arbid #text_wia h1 {
+  font-size: 3.35rem;
+  font-family: "Poppins", sans-serif;
+  color: none;
+  text-align: center;
+  line-height: 0.9;
+}
+#main-principal #what-is-arbid #text_wia h1 span {
+  font-size: 2.2rem;
+}
+#main-principal #what-is-arbid #text_wia #autoasesoria {
+  width: 8rem;
+  height: 4rem;
+  background-color: none;
+  border: none;
+  border-radius: 0 1.5rem 0 1.5rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #00373d;
+  background: linear-gradient(to right, rgb(236, 229, 109), #fab403);
+}
+#main-principal #what-is-arbid #text_wia #autoasesoria:focus {
+  background-color: #fab403;
+}
+#main-principal #what-is-arbid .box-estructures-relative_wia {
+  width: 100vw;
+  height: 32.5vh;
+  position: relative;
+  transform: translateY(-5rem);
+}
+#main-principal #what-is-arbid .box-estructures-relative_wia img {
+  width: 226px;
+  height: 254px;
+  position: absolute;
+  right: 25px;
+}
+#main-principal #marketing-strategy {
+  width: 100vw;
+  height: none;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  margin-top: -4rem;
+}
+#main-principal #marketing-strategy #box-img_ms {
+  width: 100vw;
+  height: none;
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 80vw;
+  position: relative;
+  margin-bottom: 3rem;
+  padding-top: 2.5rem;
+}
+#main-principal #marketing-strategy #box-img_ms div h2 {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  color: #00373d;
+  position: absolute;
+  top: 5.4rem;
+  right: none;
+  bottom: none;
+  left: 4.5rem;
+  text-align: center;
+  line-height: 0.9;
+}
+#main-principal #marketing-strategy #box-img_ms div h2 span {
+  font-size: 1.24rem;
+  color: #00929b;
+}
+#main-principal #marketing-strategy #box-img_ms div .strategy-types h3 {
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+  color: #fab403;
+}
+#main-principal #marketing-strategy #box-img_ms div .strategy-types #ads_ms {
+  position: absolute;
+  top: 0;
+  right: none;
+  bottom: none;
+  left: 0.3rem;
+}
+#main-principal #marketing-strategy #box-img_ms div .strategy-types #re-marketing_ms {
+  position: absolute;
+  top: 0;
+  right: 0.3rem;
+  bottom: none;
+  left: none;
+  text-align: right;
+}
+#main-principal #marketing-strategy #box-img_ms div .strategy-types #redes_ms {
+  position: absolute;
+  top: none;
+  right: none;
+  bottom: -0.2rem;
+  left: 0.3rem;
+}
+#main-principal #marketing-strategy #box-img_ms div p {
+  position: absolute;
+  top: none;
+  right: 0;
+  bottom: -1rem;
+  left: none;
+  color: #004f83;
+  font-family: "MuseoModerno", cursive;
+  font-size: 1.5rem;
+}
+#main-principal #marketing-strategy #box-img_ms img {
+  width: 80vw;
+}
+#main-principal #marketing-strategy #box-info_ms {
+  width: 80vw;
+  text-align: justify;
+}
+#main-principal #marketing-strategy #box-info_ms h3 {
+  font-size: 1.75rem;
+  font-family: "Poppins", sans-serif;
+  color: none;
+}
+#main-principal #marketing-strategy #box-info_ms h3 span {
+  font-size: 1.9rem;
+}
+#main-principal #marketing-strategy #box-info_ms p .arbid_span {
+  color: #004f83;
+  font-family: "MuseoModerno", cursive;
+  font-size: 1.2rem;
+}
+#main-principal #marketing-strategy #box-info_ms hr {
+  border-radius: 0.6rem;
+  opacity: 1;
+  border-width: 0.2rem;
+  border-color: #fab403;
+  margin: 2rem 0;
+}
+#main-principal #marketing-strategy #box-info_ms .cta-services {
+  width: 80vw;
+  height: none;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+#main-principal #marketing-strategy #box-info_ms .button {
+  width: 10rem;
+  height: 2.8rem;
+  background-color: #00929b;
+  border: none;
+  border-radius: 0.625rem;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.15rem;
+}
+#main-principal #arbid-goal {
+  width: 100vw;
+  height: 107vh;
+  background-color: trasparent;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+}
+#main-principal #arbid-goal #ilustrations_ag {
+  width: 100vw;
+  height: none;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#main-principal #arbid-goal #ilustrations_ag #arrow_ag {
+  width: 85vw;
+  margin: 1rem 0 -0.5rem 0;
+}
+#main-principal #arbid-goal #ilustrations_ag #ilustration-background {
+  width: 79vw;
+  margin: 1.2rem 0 2.5rem 0;
+}
+#main-principal #arbid-goal #text_ag {
+  width: 80vw;
+  height: 50vh;
+  text-align: center;
+}
+#main-principal #arbid-goal #text_ag header h3 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: none;
+}
+#main-principal #arbid-goal #text_ag header h3 .arbid_span {
+  color: #004f83;
+  font-family: "MuseoModerno", cursive;
+  font-size: 2rem;
+}
+#main-principal #arbid-goal #text_ag header h3 .arbid_span span {
+  color: #fab403;
+}
+#main-principal #arbid-goal #text_ag header h3 #world-1_span {
+  color: #00373d;
+  font-size: 2.5rem;
+}
+#main-principal #arbid-goal #text_ag header h3 #world-1_span #world-2_span {
+  color: #00929b;
+}
+#main-principal #arbid-goal #text_ag header hr {
+  border-radius: 0.6rem;
+  opacity: 1;
+  border-width: 0.5rem;
+  border-color: #fab403;
+  width: 6rem;
+  margin: 1rem auto;
+}
+#main-principal #arbid-goal #text_ag header h4 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #00929b;
+}
+#main-principal #arbid-goal #text_ag header h4 .arbid_span {
+  color: #004f83;
+  font-family: "MuseoModerno", cursive;
+  font-size: 1.5rem;
+}
+#main-principal #arbid-goal #text_ag article {
+  margin-top: 1rem;
+  text-align: justify;
+}
+#main-principal #arbid-goal #text_ag footer .button {
+  width: 10rem;
+  height: 2.8rem;
+  background-color: #fab403;
+  border: none;
+  border-radius: 0.625rem;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.15rem;
+}
+#main-principal #arbid-goal #text_ag footer hr {
+  border-radius: 0.6rem;
+  opacity: 1;
+  border-width: 0.2rem;
+  border-color: #fab403;
+  margin: 1.6rem auto;
+}
+#main-principal #quoate-services {
+  width: 100vw;
+  height: none;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+#main-principal #quoate-services header {
+  margin-top: 1.5rem;
+}
+#main-principal #quoate-services header h3 {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  color: #00373d;
+}
+#main-principal #quoate-services header h3 .arbid_span {
+  color: #004f83;
+  font-family: "MuseoModerno", cursive;
+  font-size: 2rem;
+}
+#main-principal #quoate-services header h3 .arbid_span span {
+  color: #fab403;
+}
+#main-principal #quoate-services header h3 #necessary_span {
+  font-size: 2rem;
+}
+#main-principal #quoate-services .container-services .services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+#main-principal #quoate-services .container-services .services .content-services {
+  width: 11rem;
+}
+#main-principal #quoate-services .container-services .services .content-services img {
+  width: 40vw;
+}
+#main-principal #quoate-services .container-services .services .content-services h2 {
+  color: #004f83;
+  font-family: "MuseoModerno", cursive;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+#main-principal #quoate-services .container-services .services .content-services h2 span {
+  color: #fab403;
+}
+#main-principal #quoate-services .container-services .services .content-services button {
+  background-color: transparent;
+  width: 8rem;
+  height: 2.5rem;
+}
+#main-principal #quoate-services .container-services .services .content-services button p, #main-principal #quoate-services .container-services .services .content-services button i {
+  display: inline;
+  color: black;
+}
+#main-principal #quoate-services .container-services #first-services {
+  margin-top: -1.5rem;
+}
+#main-principal #quoate-services footer button {
+  width: 12rem;
+  height: 2.8rem;
+  background-color: #fab403;
+  border: none;
+  border-radius: 0.625rem;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.15rem;
+}
+#main-principal #quoate-services footer hr {
+  border-radius: 0.6rem;
+  opacity: 1;
+  border-width: 0.2rem;
+  border-color: #fab403;
+  width: 80vw;
+  margin: 2rem 0;
+}
+
+#footer-principal {
+  width: 100vw;
+  height: none;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+#footer-principal h4 {
+  font-size: 2.7rem;
+  font-family: "Poppins", sans-serif;
+  color: #00373d;
+  line-height: 0.9;
+  text-align: right;
+}
+#footer-principal h4 span {
+  font-size: 3rem;
+}
+#footer-principal h5 {
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem 0;
+  letter-spacing: 0.13rem;
+}
+#footer-principal h5 .arbid_span {
+  color: #004f83;
+  font-family: "MuseoModerno", cursive;
+  font-size: 1.4rem;
+}
+#footer-principal h5 .arbid_span span {
+  color: #fab403;
+}
+#footer-principal h5 span {
+  color: #323366;
+  letter-spacing: 0;
+}
+#footer-principal #social-networks_container {
+  width: 80vw;
+  height: none;
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+#footer-principal #social-networks_container img {
+  width: 2rem;
+}
+#footer-principal #social-networks_container a {
+  text-decoration: none;
+}
+#footer-principal img {
+  width: 100vw;
 }/*# sourceMappingURL=style.css.map */

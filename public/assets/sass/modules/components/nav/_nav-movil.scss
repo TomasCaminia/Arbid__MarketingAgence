@@ -1,0 +1,20 @@
+nav {
+    @include flex-cont_w-h-jc-ai-bc-fd (100vw , 25vh , space-evenly , center , $white , column);
+    margin-top: -33vh;
+    position: absolute;
+    box-shadow: 0 8px 6px -6px #999;
+    text-align: center;
+
+    ul {
+        transform: translateY(.5rem);
+        li {
+            @include letras_fs-ff-c ( 1rem , $generalFont , $blueDark );
+            margin: 1rem 0;
+        }
+
+        img {
+            width: 1.5rem;
+            margin-right: .5rem;
+        }
+    }
+}

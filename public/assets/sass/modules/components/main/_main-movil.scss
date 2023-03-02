@@ -1,61 +1,368 @@
-#main {
+#main-principal {
+
     #hero {
-        #container-piramide {
-            @include flex-cont_w-h-bc-d-fd-jc-ai ( none , 40vh , transparent , flex , row , center , center);
-            
-            #piramide-ilustracion {
-                width: 75vw;
-                height: 75vw;
-            }
-        }
-
-        #container-text {
-            margin-top: 6vh;
-
-            #h2-cta {
-                font-family: 'Roboto', sans-serif;
-                font-size: 28px;
-
-                span {font-style: italic;}
-            }
-        }
-
-        #container-cta {
-            @include flex-cont_w-h-bc-d-fd-jc-ai (100vh , 7vh , transparent , flex , row , center , center);
-
-            #button-cta {
-                width: 160px;
-                height: 45px;
-                border-radius: 10px;
+            #box-piramide {
+                @include flex-cont_w-h-jc-ai-bc-fd ( 100vw , 43vh , center , center);
                 
-                font-size: 16px;
-                font-style: italic;
-                font-family: 'Roboto' , sans-serif;
-                letter-spacing: 2px
+                img {
+                    width: 75vw;
+                    height: 75vw;
+    
+                    max-width: 700px;
+                    max-height: 550px;
+                }
             }
-        }
-
-        
-        #container-estructures {
-            #estructura-1_hero {
-                position: absolute;
-
-                width: 151.4px;
-                height: 122.5px;
-
-                transform: translate(-4vw , 7vh);
-            } 
-
-            #estructura-2_hero {
-                position: absolute;
-
-                width: 110px;
-                height: 160px;
-
-                transform: translate(70vw , 2.5vh);
+    
+            #box-text {
+                text-align: center;
+                margin-top: 4vh;
+    
+                h2 {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1.75rem;
+    
+                    span {
+                        color: $blueDark;
+                        font-style: italic;
+                    }
+                }
             }
-        }
-        
-        
+    
+            #box-cta {
+                @include flex-cont_w-h-jc-ai-bc-fd (100vh , 7vh , center , center);
+    
+                .button {
+                    @include button();
+                }
+            }
+    
+            #box-estructures_hero {
+                width: 100vw;
+                height: 30vh;
+                position: relative;
+    
+                #el-1 {
+                    @include position-t-r-b-l (none , none , 3vh , 0);
+    
+                    width: 9.4rem;
+                    height: 7.6rem;
+                } 
+    
+                #el-2 {
+                    @include position-t-r-b-l (none , 0 , 3.5vh , none);
+    
+                    width: 8.75rem;
+                    height: 12.5rem;
+                }
+            }      
     }
+
+    #what-is-arbid {
+            @include flex-cont_w-h-jc-ai-bc-fd (100vw , none , center , center , transparent , column );
+    
+            .box-estructures-flex_wia {
+                width: 100vw;
+                display: flex;
+                justify-content: space-between;
+    
+                #el-3 {
+                    width: 11rem;
+                    height: 23rem ;
+                }
+    
+                #el-4 {
+                    width: 10rem;
+                    height: 5rem;
+                }
+            }
+    
+            #text_wia {
+                width: 80vw;
+                height: 32.5vh;
+                text-align: justify;
+                transform: translate(1rem , -4rem);
+    
+                h1 {
+                    @include letras_fs-ff-c (3.35rem, $generalFont , none);
+                    text-align: center;
+                    line-height: .9;
+    
+                    span { 
+                        font-size: 2.2rem; 
+                    }
+                }
+    
+                #autoasesoria {
+                    @include basic-cont_w-h-bc-b-br ( 8rem , 4rem , none  , none ,  0 1.5rem 0 1.5rem);
+                    @include letras_fs-ff-c ( 1rem ,  $generalFont , $blueDark);
+                    background: linear-gradient(to right, rgb(236, 229, 109), $yellowPrincipal);
+                    
+                    &:focus { background-color: $yellowPrincipal; }
+                }
+            }
+    
+            .box-estructures-relative_wia {
+                width: 100vw;
+                height: 32.5vh;
+                position: relative;
+                transform: translateY(-5rem);
+    
+                img {
+                    width: 226px; 
+                    height: 254px;
+                    position: absolute;
+                    right: 25px
+                }
+            }
+    }
+
+    #marketing-strategy {
+            @include flex-cont_w-h-jc-ai-bc-fd ( 100vw , none , space-around , center , transparent , column );
+            margin-top: -4rem;
+    
+            #box-img_ms {
+                @include flex-cont_w-h-jc-ai-bc-fd (100vw , none , center , center );
+                width: 80vw; 
+                position: relative;
+    
+                margin-bottom: 3rem;
+                padding-top: 2.5rem;
+                
+                // ! ESTILOS PARA EL TEXTO QUE RODEA LA IMAGEN
+                div {
+                    h2 {
+                        @include letras_fs-ff-c (1.6rem , $generalFont , $blueDark);
+                        @include position-t-r-b-l (5.4rem , none , none , 4.5rem);
+                        text-align: center;
+                        line-height: .9;
+
+                        span {  
+                            font-size: 1.24rem ;
+                            color: $blue-light
+                        }
+                    }
+
+                    .strategy-types {
+                        h3 {
+                            @include letras_fs-ff-c (1.125rem , $generalFont , $yellowPrincipal);
+                        }
+        
+                        #ads_ms {
+                            @include position-t-r-b-l (0 , none , none , .3rem);
+                        }
+        
+                        #re-marketing_ms {
+                            @include position-t-r-b-l (0 , .3rem , none , none);
+                            text-align: right;
+                        }
+            
+                        #redes_ms {
+                            @include position-t-r-b-l (none , none , -.2rem , .3rem);
+                        }
+                    }
+
+                    p {
+                        @include position-t-r-b-l (none , 0 , -1rem , none);
+                        @include logo (1.5rem);
+                    }
+                }
+    
+                img {
+                    width: 80vw;
+                }
+    
+            }
+    
+            #box-info_ms {
+                width: 80vw;
+                text-align: justify;
+    
+                h3 {
+                    @include letras_fs-ff-c ( 1.75rem , $generalFont , none );
+    
+                    span { 
+                        font-size: 1.9rem
+                    }
+                }
+    
+                p {  
+                    .arbid_span { 
+                        @include logo(1.2rem); 
+                    }
+                }
+    
+                hr {
+                    @include hr_w-c;
+                    margin: 2rem 0
+                }
+
+                .cta-services {
+                    @include flex-cont_w-h-jc-ai-bc-fd (80vw , none , center , center , transparent , column);
+                    text-align: center
+                }
+    
+                .button {
+                    @include button();
+                }
+            }
+    }
+
+    #arbid-goal {
+        @include flex-cont_w-h-jc-ai-bc-fd (100vw , 107vh , start , center , trasparent , column);
+    
+        #ilustrations_ag {
+            @include flex-cont_w-h-jc-ai-bc-fd (100vw , none , center , center , transparent , column);
+    
+            #arrow_ag {
+                width: 85vw;
+                margin: 1rem 0 -.5rem 0;
+            }
+        
+            #ilustration-background {
+                width: 79vw;
+                margin: 1.2rem 0 2.5rem 0;
+            }
+        }
+    
+        #text_ag {
+            width: 80vw;
+            height: 50vh;
+            text-align: center;
+
+            header {
+                h3 {
+                    @include letras_fs-ff-c (2rem , $generalFont , none);
+
+                    .arbid_span {
+                        @include logo (2rem);
+
+                        span {
+                            color: $yellowPrincipal;
+                        }
+                    }
+
+                    #world-1_span {
+                        color: $blueDark;
+                        font-size: 2.5rem;
+
+                        #world-2_span {
+                            color: $blue-light;
+                        }
+                    }
+                }
+
+                hr {
+                    @include hr_w-c(.5rem);
+                    width: 6rem;
+                    margin: 1rem auto
+                }
+
+                h4 {
+                    @include letras_fs-ff-c (1.5rem , $generalFont , $blue-light);
+
+                    .arbid_span {
+                        @include logo (1.5rem);
+                    }
+                    
+                }
+            }
+
+            article {
+                margin-top: 1rem;
+                text-align: justify;
+            }
+
+            footer {
+                .button {
+                    @include button( $yellowPrincipal );
+                }
+
+                hr {
+                    @include hr_w-c();
+                    margin: 1.6rem auto
+                }
+            }
+        }
+    }
+
+    #quoate-services {
+        @include flex-cont_w-h-jc-ai-bc-fd (100vw , none , space-around , center , transparent , column);
+        text-align: center;
+
+        header {
+            margin-top: 1.5rem;
+
+            h3 {
+                @include letras_fs-ff-c (1.8rem , $generalFont , $blueDark);
+
+                .arbid_span {
+                    @include logo (2rem);
+
+                    span { color: $yellowPrincipal; }
+                }
+
+                #necessary_span {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .container-services {
+        
+            .services {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                margin: 1.25rem 0;
+
+                .content-services {
+                    width: 11rem;
+                    
+                    img {
+                        width: 40vw;
+                    }
+    
+                    h2 {
+                        @include logo (1.8rem);
+                        margin-top: 1rem;
+                        margin-bottom: 0;
+
+                        span { color: $yellowPrincipal; }
+                    }
+
+                    button {
+                        background-color: transparent;
+                        width: 8rem;
+                        height: 2.5rem;
+
+                        p , i{
+                            display: inline;
+                            color: black;
+                        }
+                    }
+
+                }
+
+            }
+
+            #first-services {
+                margin-top: -1.5rem;
+            }
+        }
+
+        footer {
+            button {
+                @include button($yellowPrincipal , 12rem)
+            }
+
+            hr {
+                @include hr_w-c();
+                width: 80vw;
+                margin: 2rem 0;
+            }
+        }
+
+    }
+
 }

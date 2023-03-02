@@ -37,4 +37,34 @@
     }
 }
 
+body {
+    height: 1000vh;
+    overflow-x: hidden;
+    font-family: $generalFont;
+
+    span {
+        color: $yellowPrincipal;
+    }
+
+    main {
+        margin-top: 10vh;
+        color: $blueDark;
+
+        p { 
+            @include letras_fs-ff-c ( 1rem , $generalFont , $blueDark);
+        }
+    
+        h1 , h2 , h3 , h4 {
+            color: $blueDark;
+            span {
+                color: $blue-light;
+            }
+        }
+    
+        .color-light {
+            color: $yellowPrincipal;
+        }
+    }
+
+}
 

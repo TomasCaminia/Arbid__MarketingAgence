@@ -1,3 +1,5 @@
+// * ---------------------------------------------------------------
+
 // ! CONTENEDORES
 @mixin basic-cont_w-h-bc-b-br ($w , $h , $bc , $b , $br) {
     width: $w;
@@ -7,19 +9,58 @@
     border-radius: $br;
 }
 
-@mixin flex-cont_w-h-bc-d-fd-jc-ai ($w , $h , $bc , $d , $fd , $jc , $ai) {
+@mixin flex-cont_w-h-jc-ai-bc-fd ($w , $h , $jc , $ai , $bc: transparent , $fd: row) {
     width: $w;
     height: $h;
     background-color: $bc;
-    display: $d;
     flex-direction: $fd;
     justify-content: $jc;
     align-items: $ai;
+    display: flex;
 } 
+
+// * ---------------------------------------------------------------
 
 // ? LETRAS
 @mixin letras_fs-ff-c ($fs , $ff , $c) {
     font-size: $fs;
     font-family: $ff;
     color: $c;
+}
+
+@mixin logo ($fs) {
+    color: $bluePrincipal;
+    font-family: $logo;
+    font-size: $fs;
+}
+
+// * ---------------------------------------------------------------
+
+// ! POSICION DE ELEMENTOS
+@mixin position-t-r-b-l ($t , $r , $b , $l) {
+    position: absolute;
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $l;
+}
+
+// * ---------------------------------------------------------------
+
+// ? BOTONES
+@mixin button ( $br: $blue-light , $w: 10rem) {
+    @include basic-cont_w-h-bc-b-br ( $w , 2.8rem , $br , none , .625rem);
+    @include letras_fs-ff-c ( 1rem , $secondFont , $white);
+    letter-spacing: .15rem;
+}
+
+// * ---------------------------------------------------------------
+
+// ! HRs
+@mixin hr_w-c ( $bw: 0.2rem , $c: $yellowPrincipal) {
+    border-radius: 0.6rem;
+    opacity: 1;
+    
+    border-width: $bw;
+    border-color: $c;
 }
