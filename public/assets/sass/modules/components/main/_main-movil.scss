@@ -2,24 +2,23 @@
 
     #hero {
             #box-piramide {
-                @include flex-cont_w-h-jc-ai-bc-fd ( 100vw , 43vh , center , center);
+                @include flex-cont_w-h-jc-ai-bc-fd ( none , none , center , center);
+                padding: 2rem 0;
                 
                 img {
                     width: 75vw;
-                    height: 75vw;
     
-                    max-width: 700px;
-                    max-height: 550px;
+                    max-width: 390px;
                 }
             }
     
             #box-text {
                 text-align: center;
-                margin-top: 4vh;
+                margin-top: 3em;
     
                 h2 {
                     font-family: 'Roboto', sans-serif;
-                    font-size: 1.75rem;
+                    font-size: 1.75em;
     
                     span {
                         color: $blueDark;
@@ -29,7 +28,8 @@
             }
     
             #box-cta {
-                @include flex-cont_w-h-jc-ai-bc-fd (100vh , 7vh , center , center);
+                display: flex;
+                justify-content: center;
     
                 .button {
                     @include button();
@@ -44,81 +44,77 @@
                 #el-1 {
                     @include position-t-r-b-l (none , none , 3vh , 0);
     
-                    width: 9.4rem;
-                    height: 7.6rem;
+                    width: 9.4em;
                 } 
     
                 #el-2 {
                     @include position-t-r-b-l (none , 0 , 3.5vh , none);
     
-                    width: 8.75rem;
-                    height: 12.5rem;
+                    width: 8.75em;
                 }
             }      
     }
 
     #what-is-arbid {
-            @include flex-cont_w-h-jc-ai-bc-fd (100vw , none , center , center , transparent , column );
+        @include flex-cont_w-h-jc-ai-bc-fd (100vw , 97vh , center , center , transparent , column);
+        position: relative;
+            
+        #el-3 {
+            width: 11em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
     
-            .box-estructures-flex_wia {
-                width: 100vw;
-                display: flex;
-                justify-content: space-between;
+        #el-4 {
+            width: 10em;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
     
-                #el-3 {
-                    width: 11rem;
-                    height: 23rem ;
-                }
     
-                #el-4 {
-                    width: 10rem;
-                    height: 5rem;
+        #text_wia {
+            width: 80vw;
+            height: 32.5vh;
+            text-align: justify;
+            transform: translate(1rem , 1rem);
+    
+            h1 {
+                @include letras_fs-ff-c (3.34em, $generalFont , none);
+                text-align: left;
+                line-height: .9;
+    
+                span { 
+                    font-size: .65em; 
                 }
             }
+
+            p {
+                font-size: 1em
+            }
     
-            #text_wia {
-                width: 80vw;
-                height: 32.5vh;
-                text-align: justify;
-                transform: translate(1rem , -4rem);
-    
-                h1 {
-                    @include letras_fs-ff-c (3.35rem, $generalFont , none);
-                    text-align: center;
-                    line-height: .9;
-    
-                    span { 
-                        font-size: 2.2rem; 
-                    }
-                }
-    
-                #autoasesoria {
-                    @include basic-cont_w-h-bc-b-br ( 8rem , 4rem , none  , none ,  0 1.5rem 0 1.5rem);
-                    @include letras_fs-ff-c ( 1rem ,  $generalFont , $blueDark);
-                    background: linear-gradient(to right, rgb(236, 229, 109), $yellowPrincipal);
+            #autoasesoria {
+                @include basic-cont_w-h-bc-b-br ( 8rem , 4rem , none  , none ,  0 1.5rem 0 1.5rem);
+                @include letras_fs-ff-c ( 1rem ,  $generalFont , $blueDark);
+                background: linear-gradient(to right, rgb(236, 229, 109), $yellowPrincipal);
                     
-                    &:focus { background-color: $yellowPrincipal; }
-                }
+                &:focus { background-color: $yellowPrincipal; }
             }
+        }
+
     
-            .box-estructures-relative_wia {
-                width: 100vw;
-                height: 32.5vh;
-                position: relative;
-                transform: translateY(-5rem);
-    
-                img {
-                    width: 226px; 
-                    height: 254px;
-                    position: absolute;
-                    right: 25px
-                }
-            }
+        #asesoria-image {
+            width: 14rem; 
+            position: absolute;
+            bottom: 0;
+            right: 2em;
+        }
     }
 
     #marketing-strategy {
             @include flex-cont_w-h-jc-ai-bc-fd ( 100vw , none , space-around , center , transparent , column );
-            margin-top: -4rem;
+            margin-top: 4rem;
     
             #box-img_ms {
                 @include flex-cont_w-h-jc-ai-bc-fd (100vw , none , center , center );

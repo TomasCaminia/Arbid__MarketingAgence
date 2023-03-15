@@ -31,7 +31,6 @@
 }
 
 body {
-  height: 1000vh;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
@@ -59,100 +58,102 @@ body main .color-light {
 
 #header-principal {
   width: 100vw;
-  height: 8vh;
+  height: none;
   background-color: #ffffff;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   display: flex;
-  box-shadow: 0 0.1rem 0.6rem -0.3rem rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0.1rem 0.6rem -0.3rem black;
   position: fixed;
-  top: 0;
   z-index: 1000;
+  top: 0;
+  padding: 0.7em 0;
+  padding-right: 0.6rem;
 }
 #header-principal #logo {
-  width: 4.6rem;
-  height: 3.6rem;
-  margin: -0.3rem 0 0 -1.6rem;
+  width: 4.6em;
+  transform: translateY(-0.1em);
 }
 #header-principal #text-logo {
   color: #004f83;
   font-family: "MuseoModerno", cursive;
-  font-size: 2.5rem;
-  margin-top: 1rem;
+  font-size: 2.5em;
+  transform: translateY(1rem);
 }
 #header-principal #menu {
-  width: 2.8rem;
-  height: 2.8rem;
-  margin: 0.9rem -1.9rem 0 0;
+  width: 2.8em;
 }
 
+@media screen and (min-width: 850px) {
+  #header-principal {
+    font-size: 1.25rem;
+    padding: 0.4rem 4.2rem 0.4rem 2.8rem;
+  }
+  #header-principal #text-logo {
+    transform: translateY(1.3rem);
+  }
+}
 nav {
   width: 100vw;
-  height: 25vh;
+  height: none;
   background-color: #ffffff;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   display: flex;
-  margin-top: -33vh;
-  position: absolute;
-  box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 0.1em 0.6em -0.3em black;
   text-align: center;
+  position: absolute;
+  top: -40em;
 }
 nav ul {
-  transform: translateY(0.5rem);
+  margin: -0.6em 0 0.5em 0;
 }
 nav ul li {
-  font-size: 1rem;
+  font-size: 1em;
   font-family: "Poppins", sans-serif;
   color: #00373d;
-  margin: 1rem 0;
+  margin: 1em 0;
 }
 nav ul img {
-  width: 1.5rem;
-  margin-right: 0.5rem;
+  width: 1.5em;
+  margin-right: 0.5em;
 }
 
 #main-principal #hero #box-piramide {
-  width: 100vw;
-  height: 43vh;
+  width: none;
+  height: none;
   background-color: transparent;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   display: flex;
+  padding: 2rem 0;
 }
 #main-principal #hero #box-piramide img {
   width: 75vw;
-  height: 75vw;
-  max-width: 700px;
-  max-height: 550px;
+  max-width: 390px;
 }
 #main-principal #hero #box-text {
   text-align: center;
-  margin-top: 4vh;
+  margin-top: 3em;
 }
 #main-principal #hero #box-text h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.75em;
 }
 #main-principal #hero #box-text h2 span {
   color: #00373d;
   font-style: italic;
 }
 #main-principal #hero #box-cta {
-  width: 100vh;
-  height: 7vh;
-  background-color: transparent;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   display: flex;
+  justify-content: center;
 }
 #main-principal #hero #box-cta .button {
-  width: 10rem;
-  height: 2.8rem;
+  width: 10em;
+  height: 2.8em;
   background-color: #00929b;
   border: none;
   border-radius: 0.625rem;
@@ -172,8 +173,7 @@ nav ul img {
   right: none;
   bottom: 3vh;
   left: 0;
-  width: 9.4rem;
-  height: 7.6rem;
+  width: 9.4em;
 }
 #main-principal #hero #box-estructures_hero #el-2 {
   position: absolute;
@@ -181,46 +181,48 @@ nav ul img {
   right: 0;
   bottom: 3.5vh;
   left: none;
-  width: 8.75rem;
-  height: 12.5rem;
+  width: 8.75em;
 }
 #main-principal #what-is-arbid {
   width: 100vw;
-  height: none;
+  height: 97vh;
   background-color: transparent;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
+  position: relative;
 }
-#main-principal #what-is-arbid .box-estructures-flex_wia {
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
+#main-principal #what-is-arbid #el-3 {
+  width: 11em;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-#main-principal #what-is-arbid .box-estructures-flex_wia #el-3 {
-  width: 11rem;
-  height: 23rem;
-}
-#main-principal #what-is-arbid .box-estructures-flex_wia #el-4 {
-  width: 10rem;
-  height: 5rem;
+#main-principal #what-is-arbid #el-4 {
+  width: 10em;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 #main-principal #what-is-arbid #text_wia {
   width: 80vw;
   height: 32.5vh;
   text-align: justify;
-  transform: translate(1rem, -4rem);
+  transform: translate(1rem, 1rem);
 }
 #main-principal #what-is-arbid #text_wia h1 {
-  font-size: 3.35rem;
+  font-size: 3.34em;
   font-family: "Poppins", sans-serif;
   color: none;
-  text-align: center;
+  text-align: left;
   line-height: 0.9;
 }
 #main-principal #what-is-arbid #text_wia h1 span {
-  font-size: 2.2rem;
+  font-size: 0.65em;
+}
+#main-principal #what-is-arbid #text_wia p {
+  font-size: 1em;
 }
 #main-principal #what-is-arbid #text_wia #autoasesoria {
   width: 8rem;
@@ -236,17 +238,11 @@ nav ul img {
 #main-principal #what-is-arbid #text_wia #autoasesoria:focus {
   background-color: #fab403;
 }
-#main-principal #what-is-arbid .box-estructures-relative_wia {
-  width: 100vw;
-  height: 32.5vh;
-  position: relative;
-  transform: translateY(-5rem);
-}
-#main-principal #what-is-arbid .box-estructures-relative_wia img {
-  width: 226px;
-  height: 254px;
+#main-principal #what-is-arbid #asesoria-image {
+  width: 14rem;
   position: absolute;
-  right: 25px;
+  bottom: 0;
+  right: 2em;
 }
 #main-principal #marketing-strategy {
   width: 100vw;
@@ -256,7 +252,7 @@ nav ul img {
   justify-content: space-around;
   align-items: center;
   display: flex;
-  margin-top: -4rem;
+  margin-top: 4rem;
 }
 #main-principal #marketing-strategy #box-img_ms {
   width: 100vw;
@@ -362,8 +358,8 @@ nav ul img {
   text-align: center;
 }
 #main-principal #marketing-strategy #box-info_ms .button {
-  width: 10rem;
-  height: 2.8rem;
+  width: 10em;
+  height: 2.8em;
   background-color: #00929b;
   border: none;
   border-radius: 0.625rem;
@@ -446,8 +442,8 @@ nav ul img {
   text-align: justify;
 }
 #main-principal #arbid-goal #text_ag footer .button {
-  width: 10rem;
-  height: 2.8rem;
+  width: 10em;
+  height: 2.8em;
   background-color: #fab403;
   border: none;
   border-radius: 0.625rem;
@@ -528,7 +524,7 @@ nav ul img {
 }
 #main-principal #quoate-services footer button {
   width: 12rem;
-  height: 2.8rem;
+  height: 2.8em;
   background-color: #fab403;
   border: none;
   border-radius: 0.625rem;
@@ -546,44 +542,93 @@ nav ul img {
   margin: 2rem 0;
 }
 
+@media screen and (min-width: 768px) {
+  #main-principal #hero {
+    margin-bottom: -5rem;
+    font-size: 1.7rem;
+  }
+  #main-principal #hero #box-piramide {
+    justify-content: end;
+    padding: 2rem 3rem 0.5rem 0;
+  }
+  #main-principal #hero #box-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transform: translate(-2rem, 2.5rem);
+    text-align: left;
+  }
+  #main-principal #hero #box-cta button {
+    transform: scale(1.2);
+  }
+  #main-principal #hero #box-estructures_hero {
+    transform: translateY(-6rem);
+    font-size: 1.3rem;
+  }
+  #main-principal #what-is-arbid {
+    font-size: 1.5rem;
+    justify-content: start;
+  }
+  #main-principal #what-is-arbid #text_wia {
+    width: 60vw;
+    max-width: 850px;
+    margin-left: 2rem;
+  }
+  #main-principal #what-is-arbid #text_wia p {
+    margin: 1em 0;
+  }
+  #main-principal #what-is-arbid #asesoria-image {
+    right: 100px;
+  }
+}
 #footer-principal {
   width: 100vw;
+  height: none;
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+#footer-principal #contact {
+  width: 80vw;
   height: none;
   background-color: transparent;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   display: flex;
-  text-align: center;
 }
-#footer-principal h4 {
-  font-size: 2.7rem;
+#footer-principal #contact h4 {
+  font-size: 2.77rem;
   font-family: "Poppins", sans-serif;
   color: #00373d;
   line-height: 0.9;
   text-align: right;
 }
-#footer-principal h4 span {
+#footer-principal #contact h4 span {
+  color: #00929b;
   font-size: 3rem;
 }
-#footer-principal h5 {
+#footer-principal #contact h5 {
   font-size: 1.2rem;
   margin: 1rem 0 2rem 0;
   letter-spacing: 0.13rem;
 }
-#footer-principal h5 .arbid_span {
+#footer-principal #contact h5 .arbid_span {
   color: #004f83;
   font-family: "MuseoModerno", cursive;
   font-size: 1.4rem;
 }
-#footer-principal h5 .arbid_span span {
+#footer-principal #contact h5 .arbid_span span {
   color: #fab403;
 }
-#footer-principal h5 span {
+#footer-principal #contact h5 span {
   color: #323366;
   letter-spacing: 0;
 }
-#footer-principal #social-networks_container {
+#footer-principal #contact #social-networks_container {
   width: 80vw;
   height: none;
   background-color: transparent;
@@ -592,12 +637,12 @@ nav ul img {
   align-items: center;
   display: flex;
 }
-#footer-principal #social-networks_container img {
-  width: 2rem;
+#footer-principal #contact #social-networks_container img {
+  width: 2em;
 }
-#footer-principal #social-networks_container a {
+#footer-principal #contact #social-networks_container a {
   text-decoration: none;
 }
-#footer-principal img {
+#footer-principal #contact img {
   width: 100vw;
 }/*# sourceMappingURL=style.css.map */
