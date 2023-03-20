@@ -1,5 +1,4 @@
 #main-principal {
-
     #hero {
             #box-piramide {
                 @include flex-cont_w-h-jc-ai-bc-fd ( none , none , center , center);
@@ -81,8 +80,8 @@
             transform: translate(1rem , 1rem);
     
             h1 {
-                @include letras_fs-ff-c (3.34em, $generalFont , none);
-                text-align: left;
+                @include letras_fs-ff-c (3.1em, $generalFont , none);
+                text-align: center;
                 line-height: .9;
     
                 span { 
@@ -105,20 +104,22 @@
 
     
         #asesoria-image {
-            width: 14rem; 
+            width: 50vw; 
             position: absolute;
             bottom: 0;
             right: 2em;
+
+            max-width: 250px;
         }
     }
 
-    #marketing-strategy {
-            @include flex-cont_w-h-jc-ai-bc-fd ( 100vw , none , space-around , center , transparent , column );
-            margin-top: 4rem;
+    #marketing-strategy .row  {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 4rem;
     
             #box-img_ms {
-                @include flex-cont_w-h-jc-ai-bc-fd (100vw , none , center , center );
-                width: 80vw; 
                 position: relative;
     
                 margin-bottom: 3rem;
@@ -127,20 +128,24 @@
                 // ! ESTILOS PARA EL TEXTO QUE RODEA LA IMAGEN
                 div {
                     h2 {
-                        @include letras_fs-ff-c (1.6rem , $generalFont , $blueDark);
-                        @include position-t-r-b-l (5.4rem , none , none , 4.5rem);
+                        @include letras_fs-ff-c (1.5em , $generalFont , $blueDark);
+                        width: 100%;
+                        position: absolute;
+                        top: 5.5rem;
+                        transform: translateX(-.5rem);
+
                         text-align: center;
-                        line-height: .9;
+                        line-height: 1em;
 
                         span {  
-                            font-size: 1.24rem ;
+                            font-size: .85em ;
                             color: $blue-light
                         }
                     }
 
                     .strategy-types {
                         h3 {
-                            @include letras_fs-ff-c (1.125rem , $generalFont , $yellowPrincipal);
+                            @include letras_fs-ff-c (1.1em , $generalFont , $yellowPrincipal);
                         }
         
                         #ads_ms {
@@ -159,78 +164,78 @@
 
                     p {
                         @include position-t-r-b-l (none , 0 , -1rem , none);
-                        @include logo (1.5rem);
+                        @include logo (1.5em);
                     }
                 }
     
                 img {
-                    width: 80vw;
+                    width: 100%;  
                 }
     
             }
     
             #box-info_ms {
-                width: 80vw;
                 text-align: justify;
     
                 h3 {
-                    @include letras_fs-ff-c ( 1.75rem , $generalFont , none );
+                    @include letras_fs-ff-c ( 1.6em , $generalFont , none );
+                    width: 100%;
+                    text-align: center;
     
                     span { 
-                        font-size: 1.9rem
+                        font-size: 1.09em
                     }
                 }
     
                 p {  
                     .arbid_span { 
-                        @include logo(1.2rem); 
+                        @include logo(1.2em); 
                     }
                 }
-    
+
                 hr {
-                    @include hr_w-c;
+                    @include hr_w-c();
                     margin: 2rem 0
                 }
+            }
 
-                .cta-services {
-                    @include flex-cont_w-h-jc-ai-bc-fd (80vw , none , center , center , transparent , column);
-                    text-align: center
-                }
+            #box-cta_ms {
+                @include flex-cont_w-h-jc-ai-bc-fd (100% , none , center , center , transparent , column);
+                text-align: center;
     
-                .button {
+                button {
                     @include button();
                 }
             }
     }
 
-    #arbid-goal {
-        @include flex-cont_w-h-jc-ai-bc-fd (100vw , 107vh , start , center , trasparent , column);
-    
-        #ilustrations_ag {
-            @include flex-cont_w-h-jc-ai-bc-fd (100vw , none , center , center , transparent , column);
-    
-            #arrow_ag {
-                width: 85vw;
-                margin: 1rem 0 -.5rem 0;
+    #arbid-goal .row{
+        display: flex;
+        justify-content: center;
+
+        #arrow_ag {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 85%;
             }
+            margin: 1rem 0;
+        }
         
-            #ilustration-background {
-                width: 79vw;
-                margin: 1.2rem 0 2.5rem 0;
-            }
+        #ilustration-background {
+            margin: 2.5rem 0 2.5rem 0;
         }
     
         #text_ag {
-            width: 80vw;
-            height: 50vh;
             text-align: center;
 
             header {
                 h3 {
-                    @include letras_fs-ff-c (2rem , $generalFont , none);
+                    @include letras_fs-ff-c (1.8em , $generalFont , none);
 
                     .arbid_span {
-                        @include logo (2rem);
+                        @include logo (1em);
 
                         span {
                             color: $yellowPrincipal;
@@ -239,7 +244,7 @@
 
                     #world-1_span {
                         color: $blueDark;
-                        font-size: 2.5rem;
+                        font-size: 1.2em;
 
                         #world-2_span {
                             color: $blue-light;
@@ -248,16 +253,16 @@
                 }
 
                 hr {
-                    @include hr_w-c(.5rem);
-                    width: 6rem;
-                    margin: 1rem auto
+                    @include hr_w-c(.5em);
+                    width: 6em;
+                    margin: 1em auto
                 }
 
                 h4 {
-                    @include letras_fs-ff-c (1.5rem , $generalFont , $blue-light);
+                    @include letras_fs-ff-c (1.4em , $generalFont , $blue-light);
 
                     .arbid_span {
-                        @include logo (1.5rem);
+                        @include logo (1em);
                     }
                     
                 }
@@ -266,62 +271,74 @@
             article {
                 margin-top: 1rem;
                 text-align: justify;
-            }
-
-            footer {
-                .button {
-                    @include button( $yellowPrincipal );
-                }
-
-                hr {
-                    @include hr_w-c();
-                    margin: 1.6rem auto
-                }
-            }
+            }   
+        }
+        
+        button {
+            @include button( $yellowPrincipal , 10em);
+        }
+    
+        hr {
+            @include hr_w-c();
+            margin: 1.6rem;
+            width: 80%;
         }
     }
 
     #quoate-services {
-        @include flex-cont_w-h-jc-ai-bc-fd (100vw , none , space-around , center , transparent , column);
         text-align: center;
 
         header {
-            margin-top: 1.5rem;
+            @include flex-cont_w-h-jc-ai-bc-fd (100% , none , center , center);
+            margin-top: 1.5em;
 
             h3 {
-                @include letras_fs-ff-c (1.8rem , $generalFont , $blueDark);
+                width: 80%;
+                @include letras_fs-ff-c (1.7em , $generalFont , $blueDark);
 
                 .arbid_span {
-                    @include logo (2rem);
+                    @include logo (1.1em);
 
                     span { color: $yellowPrincipal; }
                 }
 
                 #necessary_span {
-                    font-size: 2rem;
+                    font-size: 1em;
                 }
             }
         }
 
         .container-services {
+            @include flex-cont_w-h-jc-ai-bc-fd (100vw , none , space-evenly , center);
+            flex-wrap: wrap;
+
+            .services1-2 , .services3-4{
+                @include flex-cont_w-h-jc-ai-bc-fd (none , none , space-evenly , center);
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .services1-2 { margin-top: 2rem; }
+            .services3-4 { margin-bottom: 2rem; }
         
             .services {
+                width: 300px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                margin: 1.25rem 0;
 
                 .content-services {
                     width: 11rem;
                     
                     img {
                         width: 40vw;
+                        max-width: 200px
                     }
     
                     h2 {
-                        @include logo (1.8rem);
-                        margin-top: 1rem;
+                        @include logo (1.8em);
+                        margin-top: 1em;
                         margin-bottom: 0;
 
                         span { color: $yellowPrincipal; }
@@ -341,13 +358,13 @@
                 }
 
             }
-
-            #first-services {
-                margin-top: -1.5rem;
-            }
         }
 
         footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             button {
                 @include button($yellowPrincipal , 12rem)
             }

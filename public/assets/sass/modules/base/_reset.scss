@@ -50,7 +50,7 @@ body {
         color: $blueDark;
 
         p { 
-            @include letras_fs-ff-c ( 1rem , $generalFont , $blueDark);
+            @include letras_fs-ff-c ( 1em , $generalFont , $blueDark);
         }
     
         h1 , h2 , h3 , h4 {

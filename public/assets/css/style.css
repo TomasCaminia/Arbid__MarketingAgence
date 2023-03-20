@@ -42,7 +42,7 @@ body main {
   color: #00373d;
 }
 body main p {
-  font-size: 1rem;
+  font-size: 1em;
   font-family: "Poppins", sans-serif;
   color: #00373d;
 }
@@ -72,8 +72,8 @@ body main .color-light {
   padding-right: 0.6rem;
 }
 #header-principal #logo {
-  width: 4.6em;
-  transform: translateY(-0.1em);
+  width: 3.8em;
+  transform: translate(0.7em, -0.1em);
 }
 #header-principal #text-logo {
   color: #004f83;
@@ -212,10 +212,10 @@ nav ul img {
   transform: translate(1rem, 1rem);
 }
 #main-principal #what-is-arbid #text_wia h1 {
-  font-size: 3.34em;
+  font-size: 3.1em;
   font-family: "Poppins", sans-serif;
   color: none;
-  text-align: left;
+  text-align: center;
   line-height: 0.9;
 }
 #main-principal #what-is-arbid #text_wia h1 span {
@@ -239,63 +239,50 @@ nav ul img {
   background-color: #fab403;
 }
 #main-principal #what-is-arbid #asesoria-image {
-  width: 14rem;
+  width: 50vw;
   position: absolute;
   bottom: 0;
   right: 2em;
+  max-width: 250px;
 }
-#main-principal #marketing-strategy {
-  width: 100vw;
-  height: none;
-  background-color: transparent;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+#main-principal #marketing-strategy .row {
   display: flex;
+  justify-content: center;
   margin-top: 4rem;
 }
-#main-principal #marketing-strategy #box-img_ms {
-  width: 100vw;
-  height: none;
-  background-color: transparent;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 80vw;
+#main-principal #marketing-strategy .row #box-img_ms {
   position: relative;
   margin-bottom: 3rem;
   padding-top: 2.5rem;
 }
-#main-principal #marketing-strategy #box-img_ms div h2 {
-  font-size: 1.6rem;
+#main-principal #marketing-strategy .row #box-img_ms div h2 {
+  font-size: 1.5em;
   font-family: "Poppins", sans-serif;
   color: #00373d;
+  width: 100%;
   position: absolute;
-  top: 5.4rem;
-  right: none;
-  bottom: none;
-  left: 4.5rem;
+  top: 5.5rem;
+  transform: translateX(-0.5rem);
   text-align: center;
-  line-height: 0.9;
+  line-height: 1em;
 }
-#main-principal #marketing-strategy #box-img_ms div h2 span {
-  font-size: 1.24rem;
+#main-principal #marketing-strategy .row #box-img_ms div h2 span {
+  font-size: 0.85em;
   color: #00929b;
 }
-#main-principal #marketing-strategy #box-img_ms div .strategy-types h3 {
-  font-size: 1.125rem;
+#main-principal #marketing-strategy .row #box-img_ms div .strategy-types h3 {
+  font-size: 1.1em;
   font-family: "Poppins", sans-serif;
   color: #fab403;
 }
-#main-principal #marketing-strategy #box-img_ms div .strategy-types #ads_ms {
+#main-principal #marketing-strategy .row #box-img_ms div .strategy-types #ads_ms {
   position: absolute;
   top: 0;
   right: none;
   bottom: none;
   left: 0.3rem;
 }
-#main-principal #marketing-strategy #box-img_ms div .strategy-types #re-marketing_ms {
+#main-principal #marketing-strategy .row #box-img_ms div .strategy-types #re-marketing_ms {
   position: absolute;
   top: 0;
   right: 0.3rem;
@@ -303,14 +290,14 @@ nav ul img {
   left: none;
   text-align: right;
 }
-#main-principal #marketing-strategy #box-img_ms div .strategy-types #redes_ms {
+#main-principal #marketing-strategy .row #box-img_ms div .strategy-types #redes_ms {
   position: absolute;
   top: none;
   right: none;
   bottom: -0.2rem;
   left: 0.3rem;
 }
-#main-principal #marketing-strategy #box-img_ms div p {
+#main-principal #marketing-strategy .row #box-img_ms div p {
   position: absolute;
   top: none;
   right: 0;
@@ -318,37 +305,38 @@ nav ul img {
   left: none;
   color: #004f83;
   font-family: "MuseoModerno", cursive;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
-#main-principal #marketing-strategy #box-img_ms img {
-  width: 80vw;
+#main-principal #marketing-strategy .row #box-img_ms img {
+  width: 100%;
 }
-#main-principal #marketing-strategy #box-info_ms {
-  width: 80vw;
+#main-principal #marketing-strategy .row #box-info_ms {
   text-align: justify;
 }
-#main-principal #marketing-strategy #box-info_ms h3 {
-  font-size: 1.75rem;
+#main-principal #marketing-strategy .row #box-info_ms h3 {
+  font-size: 1.6em;
   font-family: "Poppins", sans-serif;
   color: none;
+  width: 100%;
+  text-align: center;
 }
-#main-principal #marketing-strategy #box-info_ms h3 span {
-  font-size: 1.9rem;
+#main-principal #marketing-strategy .row #box-info_ms h3 span {
+  font-size: 1.09em;
 }
-#main-principal #marketing-strategy #box-info_ms p .arbid_span {
+#main-principal #marketing-strategy .row #box-info_ms p .arbid_span {
   color: #004f83;
   font-family: "MuseoModerno", cursive;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
-#main-principal #marketing-strategy #box-info_ms hr {
+#main-principal #marketing-strategy .row #box-info_ms hr {
   border-radius: 0.6rem;
   opacity: 1;
   border-width: 0.2rem;
   border-color: #fab403;
   margin: 2rem 0;
 }
-#main-principal #marketing-strategy #box-info_ms .cta-services {
-  width: 80vw;
+#main-principal #marketing-strategy .row #box-cta_ms {
+  width: 100%;
   height: none;
   background-color: transparent;
   flex-direction: column;
@@ -357,7 +345,7 @@ nav ul img {
   display: flex;
   text-align: center;
 }
-#main-principal #marketing-strategy #box-info_ms .button {
+#main-principal #marketing-strategy .row #box-cta_ms button {
   width: 10em;
   height: 2.8em;
   background-color: #00929b;
@@ -368,80 +356,67 @@ nav ul img {
   color: #ffffff;
   letter-spacing: 0.15rem;
 }
-#main-principal #arbid-goal {
-  width: 100vw;
-  height: 107vh;
-  background-color: trasparent;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
+#main-principal #arbid-goal .row {
   display: flex;
-}
-#main-principal #arbid-goal #ilustrations_ag {
-  width: 100vw;
-  height: none;
-  background-color: transparent;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+#main-principal #arbid-goal .row #arrow_ag {
   display: flex;
+  justify-content: center;
+  margin: 1rem 0;
 }
-#main-principal #arbid-goal #ilustrations_ag #arrow_ag {
-  width: 85vw;
-  margin: 1rem 0 -0.5rem 0;
+#main-principal #arbid-goal .row #arrow_ag img {
+  width: 85%;
 }
-#main-principal #arbid-goal #ilustrations_ag #ilustration-background {
-  width: 79vw;
-  margin: 1.2rem 0 2.5rem 0;
+#main-principal #arbid-goal .row #ilustration-background {
+  margin: 2.5rem 0 2.5rem 0;
 }
-#main-principal #arbid-goal #text_ag {
-  width: 80vw;
-  height: 50vh;
+#main-principal #arbid-goal .row #text_ag {
   text-align: center;
 }
-#main-principal #arbid-goal #text_ag header h3 {
-  font-size: 2rem;
+#main-principal #arbid-goal .row #text_ag header h3 {
+  font-size: 1.8em;
   font-family: "Poppins", sans-serif;
   color: none;
 }
-#main-principal #arbid-goal #text_ag header h3 .arbid_span {
+#main-principal #arbid-goal .row #text_ag header h3 .arbid_span {
   color: #004f83;
   font-family: "MuseoModerno", cursive;
-  font-size: 2rem;
+  font-size: 1em;
 }
-#main-principal #arbid-goal #text_ag header h3 .arbid_span span {
+#main-principal #arbid-goal .row #text_ag header h3 .arbid_span span {
   color: #fab403;
 }
-#main-principal #arbid-goal #text_ag header h3 #world-1_span {
+#main-principal #arbid-goal .row #text_ag header h3 #world-1_span {
   color: #00373d;
-  font-size: 2.5rem;
+  font-size: 1.2em;
 }
-#main-principal #arbid-goal #text_ag header h3 #world-1_span #world-2_span {
+#main-principal #arbid-goal .row #text_ag header h3 #world-1_span #world-2_span {
   color: #00929b;
 }
-#main-principal #arbid-goal #text_ag header hr {
+#main-principal #arbid-goal .row #text_ag header hr {
   border-radius: 0.6rem;
   opacity: 1;
-  border-width: 0.5rem;
+  border-width: 0.5em;
   border-color: #fab403;
-  width: 6rem;
-  margin: 1rem auto;
+  width: 6em;
+  margin: 1em auto;
 }
-#main-principal #arbid-goal #text_ag header h4 {
-  font-size: 1.5rem;
+#main-principal #arbid-goal .row #text_ag header h4 {
+  font-size: 1.4em;
   font-family: "Poppins", sans-serif;
   color: #00929b;
 }
-#main-principal #arbid-goal #text_ag header h4 .arbid_span {
+#main-principal #arbid-goal .row #text_ag header h4 .arbid_span {
   color: #004f83;
   font-family: "MuseoModerno", cursive;
-  font-size: 1.5rem;
+  font-size: 1em;
 }
-#main-principal #arbid-goal #text_ag article {
+#main-principal #arbid-goal .row #text_ag article {
   margin-top: 1rem;
   text-align: justify;
 }
-#main-principal #arbid-goal #text_ag footer .button {
+#main-principal #arbid-goal .row button {
   width: 10em;
   height: 2.8em;
   background-color: #fab403;
@@ -452,59 +427,89 @@ nav ul img {
   color: #ffffff;
   letter-spacing: 0.15rem;
 }
-#main-principal #arbid-goal #text_ag footer hr {
+#main-principal #arbid-goal .row hr {
   border-radius: 0.6rem;
   opacity: 1;
   border-width: 0.2rem;
   border-color: #fab403;
-  margin: 1.6rem auto;
+  margin: 1.6rem;
+  width: 80%;
 }
 #main-principal #quoate-services {
-  width: 100vw;
-  height: none;
-  background-color: transparent;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  display: flex;
   text-align: center;
 }
 #main-principal #quoate-services header {
-  margin-top: 1.5rem;
+  width: 100%;
+  height: none;
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 1.5em;
 }
 #main-principal #quoate-services header h3 {
-  font-size: 1.8rem;
+  width: 80%;
+  font-size: 1.7em;
   font-family: "Poppins", sans-serif;
   color: #00373d;
 }
 #main-principal #quoate-services header h3 .arbid_span {
   color: #004f83;
   font-family: "MuseoModerno", cursive;
-  font-size: 2rem;
+  font-size: 1.1em;
 }
 #main-principal #quoate-services header h3 .arbid_span span {
   color: #fab403;
 }
 #main-principal #quoate-services header h3 #necessary_span {
-  font-size: 2rem;
+  font-size: 1em;
+}
+#main-principal #quoate-services .container-services {
+  width: 100vw;
+  height: none;
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+#main-principal #quoate-services .container-services .services1-2, #main-principal #quoate-services .container-services .services3-4 {
+  width: none;
+  height: none;
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+#main-principal #quoate-services .container-services .services1-2 {
+  margin-top: 2rem;
+}
+#main-principal #quoate-services .container-services .services3-4 {
+  margin-bottom: 2rem;
 }
 #main-principal #quoate-services .container-services .services {
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1.25rem 0;
 }
 #main-principal #quoate-services .container-services .services .content-services {
   width: 11rem;
 }
 #main-principal #quoate-services .container-services .services .content-services img {
   width: 40vw;
+  max-width: 200px;
 }
 #main-principal #quoate-services .container-services .services .content-services h2 {
   color: #004f83;
   font-family: "MuseoModerno", cursive;
-  font-size: 1.8rem;
-  margin-top: 1rem;
+  font-size: 1.8em;
+  margin-top: 1em;
   margin-bottom: 0;
 }
 #main-principal #quoate-services .container-services .services .content-services h2 span {
@@ -519,8 +524,10 @@ nav ul img {
   display: inline;
   color: black;
 }
-#main-principal #quoate-services .container-services #first-services {
-  margin-top: -1.5rem;
+#main-principal #quoate-services footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #main-principal #quoate-services footer button {
   width: 12rem;
@@ -566,7 +573,7 @@ nav ul img {
     font-size: 1.3rem;
   }
   #main-principal #what-is-arbid {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     justify-content: start;
   }
   #main-principal #what-is-arbid #text_wia {
@@ -579,6 +586,61 @@ nav ul img {
   }
   #main-principal #what-is-arbid #asesoria-image {
     right: 100px;
+  }
+  #main-principal #marketing-strategy #box-img_ms {
+    transform: translateX(-4rem);
+    font-size: 1.1rem;
+  }
+  #main-principal #marketing-strategy #box-img_ms h2 {
+    display: none;
+  }
+  #main-principal #marketing-strategy #box-img_ms p {
+    transform: translate(-0.5rem, 0);
+  }
+  #main-principal #marketing-strategy #box-info_ms {
+    transform: translateX(6rem);
+    font-size: 1.4rem;
+  }
+  #main-principal #marketing-strategy #box-info_ms h3 {
+    text-align: center;
+    margin-bottom: -1rem;
+  }
+  #main-principal #marketing-strategy #box-info_ms hr {
+    display: none;
+  }
+  #main-principal #marketing-strategy #box-info_ms p {
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 1.4em;
+  }
+  #main-principal #marketing-strategy #box-cta_ms button {
+    transform: scale(1.2);
+  }
+  #main-principal #arbid-goal .row #arrow_ag img {
+    max-width: 500px;
+    margin: 3rem 0;
+  }
+  #main-principal #arbid-goal .row #ilustration-background {
+    transform: translateX(4rem);
+  }
+  #main-principal #arbid-goal .row #text_ag {
+    transform: translateX(-2rem);
+    font-size: 1.2rem;
+  }
+  #main-principal #arbid-goal .row #text_ag p {
+    text-align: center;
+  }
+  #main-principal #quoate-services header h3 {
+    transform: scale(1.4);
+  }
+  #main-principal #quoate-services .container-services {
+    margin: 2rem 0;
+  }
+  #main-principal #quoate-services .container-services .services1-2 {
+    margin-top: 0;
+  }
+  #main-principal #quoate-services .container-services .services3-4 {
+    margin-bottom: 0;
   }
 }
 #footer-principal {
@@ -601,7 +663,7 @@ nav ul img {
   display: flex;
 }
 #footer-principal #contact h4 {
-  font-size: 2.77rem;
+  font-size: 2.77em;
   font-family: "Poppins", sans-serif;
   color: #00373d;
   line-height: 0.9;
@@ -609,17 +671,17 @@ nav ul img {
 }
 #footer-principal #contact h4 span {
   color: #00929b;
-  font-size: 3rem;
+  font-size: 1.5em;
 }
 #footer-principal #contact h5 {
-  font-size: 1.2rem;
-  margin: 1rem 0 2rem 0;
-  letter-spacing: 0.13rem;
+  font-size: 1.2em;
+  margin: 1em 0 2em 0;
+  letter-spacing: 0.13em;
 }
 #footer-principal #contact h5 .arbid_span {
   color: #004f83;
   font-family: "MuseoModerno", cursive;
-  font-size: 1.4rem;
+  font-size: 1.2em;
 }
 #footer-principal #contact h5 .arbid_span span {
   color: #fab403;
@@ -645,4 +707,19 @@ nav ul img {
 }
 #footer-principal #contact img {
   width: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+  #footer-principal #contact {
+    font-size: 1.3rem;
+  }
+  #footer-principal #contact h4 {
+    text-align: right;
+  }
+  #footer-principal #contact #social-networks_container {
+    max-width: 600px;
+  }
+  #footer-principal img {
+    max-width: 800px;
+  }
 }/*# sourceMappingURL=style.css.map */

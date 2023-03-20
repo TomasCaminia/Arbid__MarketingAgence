@@ -6,23 +6,23 @@
         @include flex-cont_w-h-jc-ai-bc-fd (80vw , none , space-around , center , transparent , column);
 
         h4 {
-            @include letras_fs-ff-c (2.77rem , $generalFont , $blueDark);
+            @include letras_fs-ff-c (2.77em , $generalFont , $blueDark);
             line-height: .9;
             text-align: right;
     
             span {
                 color: $blue-light;
-                font-size: 3rem
+                font-size: 1.5em
             }
         }
     
         h5 {
-            font-size: 1.2rem;
-            margin: 1rem 0 2rem 0;
-            letter-spacing: .13rem;
+            font-size: 1.2em;
+            margin: 1em 0 2em 0;
+            letter-spacing: .13em;
     
             .arbid_span {
-                @include logo (1.4rem);
+                @include logo (1.2em);
     
                 span { color: $yellowPrincipal; }
             }
