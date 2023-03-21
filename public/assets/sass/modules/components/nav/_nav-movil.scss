@@ -1,13 +1,17 @@
-nav {
+#nav-principal {
     @include flex-cont_w-h-jc-ai-bc-fd (100vw , none , space-evenly , center , $white , column);
     box-shadow: 0 .1em .6em -.3em black;
     text-align: center;
+    z-index: 100;
 
-    position: absolute;
-    top: -40em;
+    position: fixed;
+    top: -20em;
+    transition: top .8s ease;
+
+    &:active {  top: 4em;}
 
     ul {
-        margin: -.6em 0 .5em 0;
+        margin: .6em 0 .5em 0;
         li {
             @include letras_fs-ff-c ( 1em , $generalFont , $blueDark );
             margin: 1em 0;

@@ -17,11 +17,12 @@
     
     #text-logo {
         @include logo ( 2.5em );
-        transform: translateY(1rem);
+        transform: translate(.3em , 1rem);
     }
     
     
     #menu {
         width: 2.8em;
+        cursor: pointer;
     }
 }
