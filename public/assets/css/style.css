@@ -127,6 +127,33 @@ body main .color-light {
   margin-right: 0.5em;
 }
 
+#backToStart-button {
+  width: 4rem;
+  height: 4rem;
+  background-color: #323366;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  z-index: 1000;
+  border-radius: 50%;
+  transition: all 0.6s;
+}
+#backToStart-button:hover {
+  background-color: #00373d;
+}
+#backToStart-button img {
+  width: 27px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
 #main-principal #hero #box-piramide {
   width: none;
   height: none;

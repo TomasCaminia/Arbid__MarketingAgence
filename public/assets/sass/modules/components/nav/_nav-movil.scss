@@ -23,3 +23,26 @@
         }
     }
 }
+
+#backToStart-button {
+    @include flex-cont_w-h-jc-ai-bc-fd (4rem , 4rem , center , center , $purpule);
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    z-index: 1000;
+    border-radius: 50%;
+    transition: all .6s;
+
+    &:hover {
+        background-color: $blueDark;
+    }
+
+    img {
+        width: 27px;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
