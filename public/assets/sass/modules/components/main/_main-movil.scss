@@ -32,6 +32,8 @@
     
                 .button {
                     @include button();
+                    cursor: pointer;
+                    z-index: 10;
                 }
             }
     
@@ -72,11 +74,10 @@
             top: 0;
         }
     
-    
         #text_wia {
             width: 80vw;
             height: 32.5vh;
-            text-align: justify;
+            text-align: center;
             transform: translate(1rem , 1rem);
     
             h1 {
@@ -97,11 +98,13 @@
                 @include basic-cont_w-h-bc-b-br ( 8rem , 4rem , none  , none ,  0 1.5rem 0 1.5rem);
                 @include letras_fs-ff-c ( 1rem ,  $generalFont , $blueDark);
                 background: linear-gradient(to right, rgb(236, 229, 109), $yellowPrincipal);
+
+                // ! Haciendo el boton invisible
+                opacity: 0;
                     
                 &:focus { background-color: $yellowPrincipal; }
             }
         }
-
     
         #asesoria-image {
             width: 50vw; 
@@ -175,7 +178,7 @@
             }
     
             #box-info_ms {
-                text-align: justify;
+                text-align: center;
     
                 h3 {
                     @include letras_fs-ff-c ( 1.6em , $generalFont , none );
@@ -202,7 +205,7 @@
             #box-cta_ms {
                 @include flex-cont_w-h-jc-ai-bc-fd (100% , none , center , center , transparent , column);
                 text-align: center;
-    
+
                 button {
                     @include button();
                 }
@@ -270,7 +273,7 @@
 
             article {
                 margin-top: 1rem;
-                text-align: justify;
+                text-align: center;
             }   
         }
         
@@ -286,6 +289,7 @@
     }
 
     #quoate-services {
+        position: relative;
         text-align: center;
 
         header {
@@ -309,11 +313,12 @@
         }
 
         .container-services {
-            @include flex-cont_w-h-jc-ai-bc-fd (100vw , none , space-evenly , center);
+            @include flex-cont_w-h-jc-ai-bc-fd (100vw , none , space-between , start);
             flex-wrap: wrap;
 
             .services1-2 , .services3-4{
-                @include flex-cont_w-h-jc-ai-bc-fd (none , none , space-evenly , center);
+                @include flex-cont_w-h-jc-ai-bc-fd (100% , none , center , start);
+                padding: 0 1em;
                 display: flex;
                 flex-wrap: wrap;
             }
@@ -345,6 +350,8 @@
                     }
 
                     button {
+                        opacity: 0;
+
                         background-color: transparent;
                         width: 8rem;
                         height: 2.5rem;
@@ -357,6 +364,40 @@
 
                 }
 
+            }
+        }
+
+        .info-services {
+            width: 45vw;
+            height: 200%;
+            position: absolute;
+            top: -10rem;
+            background-color: $purpule;
+            padding-top: 10rem;
+            padding-left: 1rem;
+            text-align: left;
+
+            h4 {
+                font-size: 1.2em;
+
+                span { 
+                    @include logo (1em);
+                    span { 
+                        color: $yellowPrincipal; 
+                    }
+                }
+            }
+
+            p { color: $blue-light; }
+
+            ul { 
+                list-style-type: circle;
+                text-align: left; 
+                
+                li {
+                    font-size: .9em;
+                    padding: 1em 0;
+                }
             }
         }
 

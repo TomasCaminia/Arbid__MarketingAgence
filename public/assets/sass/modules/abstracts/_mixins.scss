@@ -51,6 +51,7 @@
 @mixin button ( $br: $blue-light , $w: 10em) {
     @include basic-cont_w-h-bc-b-br ( $w , 2.8em , $br , none , .625rem);
     @include letras_fs-ff-c ( 1rem , $secondFont , $white);
+    cursor: pointer;
     letter-spacing: .15rem;
 }
 

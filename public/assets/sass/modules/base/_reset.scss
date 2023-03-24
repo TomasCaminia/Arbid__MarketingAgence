@@ -38,6 +38,11 @@
 }
 
 body {
+    a { 
+        text-decoration: none;
+        color: white;
+    }
+
     overflow-x: hidden;
     font-family: $generalFont;
 
@@ -45,16 +50,22 @@ body {
         color: $yellowPrincipal;
     }
 
+    
     main {
         margin-top: 10vh;
         color: $blueDark;
-
-        p { 
+        
+        button {
+            cursor: pointer;
+        }
+        
+        p , li { 
             @include letras_fs-ff-c ( 1em , $generalFont , $blueDark);
         }
     
         h1 , h2 , h3 , h4 {
             color: $blueDark;
+            font-size: $generalFont;
             span {
                 color: $blue-light;
             }
